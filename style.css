@@ -13,8 +13,8 @@ nav{
     top:0;
     left:0;
     width: 100%;
-    height: 100px;
-    padding: 10px 100px;
+    height: 100px; 
+    padding: 10px 100px; 
     box-sizing: border-box;
     transition: .5s;
     opacity: 0.9;
@@ -25,11 +25,12 @@ nav .logo{
 }
 
 nav .logo img{
-    height: 80px;
+    height: 60px;
     transition: .7s;
     cursor: pointer;
     border-radius: 50%;
 }
+
 /* pozicija liste - navigacije*/
 nav ul{
     float: right;
@@ -95,7 +96,7 @@ section.sec1{
     background: url(img/bg1.jpg);
     z-index:-1;
     background-size: cover;
-    filter:blur(3px);
+    filter: blur(3px);
     position: relative;
 }
 
@@ -111,6 +112,7 @@ section.sec1{
 .prvi{
     padding-top: 100px;
 }
+
 .omeni h1, .omeni p{
     padding: 10px;
     margin: 10px;
@@ -121,17 +123,53 @@ section.sec1{
     float: left;
 }
 
+#drugi{
+    height: 860px;
+}
+
 .sec3{
     margin-top: 80px;
     display: flex;
     float: right;
 }
 
+/* Zoki sekcija */
 .sec4{
     display: flex;
     float: left;
+    background: url(img/4k-wallpaper-architecture-background-1308624.jpg);
+    border-radius: 15px;
+    height: 350px;
+    color: beige;
 }
 
-#drugi{
-    height: 860px;
+.sec4 img {
+    height: 250px;
+    margin: 45px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightseagreen;
+}
+
+.sec4 p {
+    margin-top: 40px;
+    text-align: justify;
+}
+
+.sec4 h1 {
+    margin-top: 70px;
+}
+
+.sec4 a {
+    text-decoration: none;
+}
+
+/* END of Zoki sekcija */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    font-size: 10px;
+    color: black;
+    padding-bottom: 10px;
 }

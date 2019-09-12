@@ -7,17 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <title>Projekat X</title>
-    <!--povezivanje sa css fajlom-->
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!--povezivanje sa js-->
-    <script type="text/javascript" src="jquery.min.js"></script>
-   
+    <title>Projekat X</title>
 
 </head>
 
@@ -31,17 +28,17 @@
             <span class="navbar-toggler-icon"></span></button>
 
         <!-- NAV linkovi -->
-        <div class="navbar-collapse collapse " id="navbar">
+        <div class="navbar-collapse collapse" id="navbar">
 
-            <ul class="navigacija navbar-nav ml-2">
+            <ul class="nav navbar-nav navigacija ml-2">
                 <li class="nav-item mr-5">
                     <p class="logo navbrend" href="#pocetna"><img src="img/projekatx.png" alt="projekatX"></p>
                 </li>
-                <li class="nav-item ml-4 mr-5">
+                <li class="nav-item mr-5">
                     <a class="btn btn-outline-info active" href="#pocetna">Početna</a>
                 </li>
-                <li class="onama nav-item mr-5">
-                    <a class="btn btn-outline-info" href="#">O nama</a>
+                <li class="nav-item mr-5">
+                    <p class="btn btn-outline-info" href="#">O nama</p>
                     <ul class="mi">
                         <li>
                             <a class="sreten btn btn-outline-info" href="#prvi">Sreten Jovanović</a>
@@ -101,11 +98,11 @@
     >-->
 
     <!-- sekcija sa slikom pozadine (ubacena u css fajlu) -->
-    <section class="sec1"></section>
+    <section class="sec1 col-sm-"></section>
 
     <!--OVDE SAM MISLIO DA DODAMO NASE PODATKE-->
     <!--Opis broj 1-->
-    <div class="omeni prvi" id="prvi">
+    <div class="omeni prvi col-sm-" id="prvi">
         <section class="sec2">
             <h1>Sreten Jovanović</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
@@ -134,7 +131,7 @@
     </div>
 
     <!--Opis broj 2-->
-    <div class="omeni" id="drugi">
+    <div class="omeni col-sm-" id="drugi">
 
         <section class="sec3">
             <img src="img/bg2.jpg" alt="andreja">
@@ -165,29 +162,31 @@
     </div>
 
     <!-- Opis broj 3 Zoran -->
-    <div class="omeni treci" id="treci">
+    <div class="omeni treci sec4 row col-sm-" id="treci">
 
-        <section class="sec4">
-            <a href="https://zoranspasiccv.netlify.com/" target="_blank">
+        <!--<section class="sec4 col-sm-">-->
+            <a class="col-sm-2" href="https://zoranspasiccv.netlify.com/" target="_blank">
                 <h1>Zoran Spasić</h1>
             </a>
-            <p> Zoran Spasić, inženjer elektrotehnike, je u timu PROJECT X od prvog dana. Višu elektrotehničku školu
-                završiva u Beogradu 1991. godine. Oblast dosadašnjeg rada obuhvata sklapanje, servisiranje i održavanje
+
+            <div class="col-sm-4"> Zoran Spasić, inženjer elektrotehnike, je u timu PROJECT X od prvog dana. Višu elektrotehničku školu je 
+                završio u Beogradu 1991. godine. Oblast dosadašnjeg rada obuhvata sklapanje, servisiranje i održavanje
                 računarske opreme, instalaciju i održavanje softvera, kako operativnih sistema Microsoft Windows 7 i 10,
                 tako i korisničkih programa iz paketa Office i drugih. Takođe vrši instalaciju, servisiranje i
-                održavanje sistema za štampu proizvođača Hewlett Packard, Samsung electronics i Canon.
-            </p>
-            <p> Osnovnom obrazovanju dodaje Microsoft Certified Professional i više Hewlett Packard sertifikata za
+                održavanje sistema za štampu, proizvođača Hewlett Packard, Samsung electronics, Lexmark i Canon.
+            </div>
+            <div class="col-sm-4"> Osnovnom obrazovanju dodaje Microsoft Certified Professional i više Hewlett Packard sertifikata za
                 prodaju i održavanje softvera i sistema za štampu. U želji da se dodatno obrazuje, pohađa IT obuku koju
                 izvodi Matematički fakultet u Beogradu. Stiče znanja iz oblasti izrade WEB stranica ("front end")
                 upotrebom tehnologija HTML, CSS, Bootstrap, Javascript, Jquery kao i ("back end") upotrebom PHP i baza
-                podataka MySQL.</p>
-            <a href="https://zoranspasiccv.netlify.com/" target="_blank"><img src="img/zoki.jpg" alt="zoran"></a>
-        </section>
+                podataka MySQL.
+            </div>
+            <a class="col-sm-2" href="https://zoranspasiccv.netlify.com/" target="_blank"><img src="img/zoki.jpg" alt="zoran"></a>
+        <!--</section>-->
     </div>
 
     <!-- Footer -->
-    <div class="container-fluid footer mt-4">
+    <div class="container-fluid col-sm- footer">
         <p>Dizajn: ProjectX company 2019.</p>
     </div>
     <!--END of Footer-->

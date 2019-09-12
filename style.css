@@ -135,22 +135,23 @@ section.sec1{
 
 /* Zoki sekcija */
 .sec4{
-    display: flex;
-    float: left;
+    /*display: flex;
+    float: left;*/
     background: url(img/4k-wallpaper-architecture-background-1308624.jpg);
     border-radius: 15px;
-    height: 350px;
+    /*height: 350px;*/
+    height: auto;
     color: beige;
 }
 
 .sec4 img {
     height: 250px;
-    margin: 45px 30px;
+    margin: 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px lightseagreen;
 }
 
-.sec4 p {
+.sec4 div {
     margin-top: 40px;
     text-align: justify;
 }
@@ -166,10 +167,12 @@ section.sec1{
 /* END of Zoki sekcija */
 
 .footer {
-    width: 100%;
+    width: 97%;
     text-align: center;
     font-style: italic;
     font-size: 10px;
-    color: black;
-    padding-bottom: 10px;
+    background: rgb(30, 60, 94);
+    color: beige;
+    line-height: 30px;
+    border-radius: 10px;
 }

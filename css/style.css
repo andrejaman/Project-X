@@ -103,7 +103,9 @@ ul li ul{
 }
 /*slika na pozadini*/
 section.sec1{
-    width:100%;
+    /* width: 100% */
+    width:98%;
+    margin: auto;
     height: 100vh;
     background: url(../img/bg1.jpg);
     z-index:-1;
@@ -149,12 +151,13 @@ section.sec1{
 }
 
 /* Zoki sekcija */
+
 .sec4{
     /*display: flex;
     float: left;*/
     width: 98%;
     margin: auto;
-    background: url(img/4k-wallpaper-architecture-background-1308624.jpg);
+    background: url(../img/4k-wallpaper-architecture-background-1308624.jpg);
     border-radius: 15px;
     /*height: 350px;*/
     height: auto;
@@ -215,6 +218,7 @@ h3 {
     font-style: italic;
     color: darkmagenta;
 }
+
 .ucionica-1, .ucionica-2, .ucionica-3 {
     width: 1100px;
     margin: auto;

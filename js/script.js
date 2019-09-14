@@ -1,22 +1,22 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-/* prikaz padajuceg menija prilikom prelaska misem preko polja "O nama"*/
-    $('.navigacija li').hover(function(){
+    /* prikaz padajuceg menija prilikom prelaska misem preko polja "O nama"*/
+    $('.navigacija li').hover(function () {
         $(this).find('ul').fadeToggle();
     });
 
-        $(".prijava").hide();
-        $(".sec1").show();
-        $(".omeni").hide();
-        $(".drugi").hide();
-        $("#treci").hide();
-        $(".registracija").hide();
-        $(".footer").show();
-   
-/* skrolovanje na odredjeno polje stranice prilikom klika na neko od polja navigacije ili logo */
-// Početna stranica
+    $(".prijava").hide();
+    $(".sec1").show();
+    $(".omeni").hide();
+    $(".drugi").hide();
+    $("#treci").hide();
+    $(".registracija").hide();
+    $(".footer").show();
 
-    $('#pocetna a').on('click',function(){
+    /* skrolovanje na odredjeno polje stranice prilikom klika na neko od polja navigacije ili logo */
+    // Početna stranica
+
+    $('#pocetna a').on('click', function () {
 
         /*if (this.hash !== "") {
 
@@ -34,7 +34,7 @@ $(document).ready(function(){
         //event.preventDefault();
 
         let izbor = this.hash;
-        
+
         console.log(izbor);
 
         if (izbor == "#prijava") {
@@ -51,13 +51,13 @@ $(document).ready(function(){
 
             // Ovde treba da bude provera da li je kliknuto dugme "Zaboravljena lozinka"
 
-            $('.prijava input').on('click',function() {
+            $('.prijava input').on('click', function () {
 
-            event.preventDefault();
+                event.preventDefault();
 
-            let zaboravioLozinku = this.hash;
+                let zaboravioLozinku = this.hash;
 
-            console.log(zaboravioLozinku);
+                console.log(zaboravioLozinku);
 
             });
         }
@@ -113,6 +113,18 @@ $(document).ready(function(){
 
         }
 
+        else if (izbor == "#pocetna") {
+
+            $(".prijava").hide();
+            $(".sec1").show();
+            $(".omeni").hide();
+            $(".drugi").hide();
+            $("#treci").hide();
+            $(".registracija").hide();
+            $(".footer").show();
+            $(".navbar").css("margin-bottom", 10 + "px");
+        }
+
     });
 
     // Stranica za prijavu kvara računara
@@ -157,7 +169,7 @@ $(document).ready(function(){
             $(".ucionica-1").hide();
             $(".ucionica-2").hide();
             $(".ucionica-3").hide();
-            
+
         }
     })
 

@@ -35,7 +35,7 @@
                     <p class="logo navbrend" href="#pocetna"><img src="img/projekatx.png" alt="projekatX"></p>
                 </li>
                 <li class="nav-item mr-5">
-                    <a class="btn btn-outline-info active" href="#pocetna">Početna</a>
+                    <a class="btn btn-outline-info" href="#pocetna">Početna</a>
                 </li>
                 <li class="nav-item mr-5">
                     <p class="btn btn-outline-info" href="#">O nama</p>
@@ -52,13 +52,13 @@
                     </ul>
                 </li>
                 <li class="nav-item mr-5">
-                    <a class="btn btn-outline-info" href="#">Prijavi kvar računara</a>
+                    <a class="btn btn-outline-info" href="./racunari.html" target="_self">Prijavi kvar računara</a>
                 </li>
                 <li class="nav-item mr-5">
-                    <a class="btn btn-outline-info" href="#">Prijavi se</a>
+                    <a class="btn btn-outline-info" href="#prijava">Prijavi se</a>
                 </li>
                 <li class="nav-item mr-5">
-                    <a class="btn btn-outline-info" href="#">Registruj se</a>
+                    <a class="btn btn-outline-info" href="#registracija">Registruj se</a>
                 </li>
 
             </ul>
@@ -131,7 +131,7 @@
     </div>
 
     <!--Opis broj 2-->
-    <div class="omeni col-sm-" id="drugi">
+    <div class="drugi col-sm-" id="drugi">
 
         <section class="sec3">
             <img src="img/bg2.jpg" alt="andreja">
@@ -162,31 +162,91 @@
     </div>
 
     <!-- Opis broj 3 Zoran -->
-    <div class="omeni treci sec4 row col-sm-" id="treci">
+    <div class="sec4 row col-sm-" id="treci">
 
         <!--<section class="sec4 col-sm-">-->
-            <a class="col-sm-2" href="https://zoranspasiccv.netlify.com/" target="_blank">
-                <h1>Zoran Spasić</h1>
-            </a>
+        <a class="col-sm-2" href="https://zoranspasiccv.netlify.com/" target="_blank">
+            <h1>Zoran Spasić</h1>
+        </a>
 
-            <div class="col-sm-4"> Zoran Spasić, inženjer elektrotehnike, je u timu PROJECT X od prvog dana. Višu elektrotehničku školu je 
-                završio u Beogradu 1991. godine. Oblast dosadašnjeg rada obuhvata sklapanje, servisiranje i održavanje
-                računarske opreme, instalaciju i održavanje softvera, kako operativnih sistema Microsoft Windows 7 i 10,
-                tako i korisničkih programa iz paketa Office i drugih. Takođe vrši instalaciju, servisiranje i
-                održavanje sistema za štampu, proizvođača Hewlett Packard, Samsung electronics, Lexmark i Canon.
-            </div>
-            <div class="col-sm-4"> Osnovnom obrazovanju dodaje Microsoft Certified Professional i više Hewlett Packard sertifikata za
-                prodaju i održavanje softvera i sistema za štampu. U želji da se dodatno obrazuje, pohađa IT obuku koju
-                izvodi Matematički fakultet u Beogradu. Stiče znanja iz oblasti izrade WEB stranica ("front end")
-                upotrebom tehnologija HTML, CSS, Bootstrap, Javascript, Jquery kao i ("back end") upotrebom PHP i baza
-                podataka MySQL.
-            </div>
-            <a class="col-sm-2" href="https://zoranspasiccv.netlify.com/" target="_blank"><img src="img/zoki.jpg" alt="zoran"></a>
+        <div class="col-sm-4"> Zoran Spasić, inženjer elektrotehnike, je u timu PROJECT X od prvog dana. Višu
+            elektrotehničku školu je
+            završio u Beogradu 1991. godine. Oblast dosadašnjeg rada obuhvata sklapanje, servisiranje i održavanje
+            računarske opreme, instalaciju i održavanje softvera, kako operativnih sistema Microsoft Windows 7 i 10,
+            tako i korisničkih programa iz paketa Office i drugih. Takođe vrši instalaciju, servisiranje i
+            održavanje sistema za štampu, proizvođača Hewlett Packard, Samsung electronics, Lexmark i Canon.
+        </div>
+        <div class="col-sm-4"> Osnovnom obrazovanju dodaje Microsoft Certified Professional i više Hewlett Packard
+            sertifikata za
+            prodaju i održavanje softvera i sistema za štampu. U želji da se dodatno obrazuje, pohađa IT obuku koju
+            izvodi Matematički fakultet u Beogradu. Stiče znanja iz oblasti izrade WEB stranica ("front end")
+            upotrebom tehnologija HTML, CSS, Bootstrap, Javascript, Jquery kao i ("back end") upotrebom PHP i baza
+            podataka MySQL.
+        </div>
+        <a class="col-sm-2" href="https://zoranspasiccv.netlify.com/" target="_blank"><img src="img/zoki.jpg"
+                alt="zoran"></a>
         <!--</section>-->
     </div>
 
+
+    <div class="prijava container col-sm-5 mt-4 mb-3 text-left">
+        <h5>Prijava</h5>
+        <form name="prijava" action="" method="">
+
+            <div class="form-group">
+                <label class="mt-3" for="uname">Korisničko ime:</label>
+                <input class="form-control" type="text" name="uname" id="uname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pass">Lozinka:</label>
+                <input class="form-control" type="password" name="pass" id="pass" required></textarea>
+            </div>
+
+            <input type="submit" class="btn btn-outline-info mb-2 mr-5 btn-prijava" style="width:120px" value="Prijavi me"/>
+            
+            <input id="btn-lozinka" type="submit" class="btn btn-outline-info mb-2 ml-5" style="width:160px" value="Zaboravljena lozinka"/>
+            
+        </form>
+    </div>
+
+
+    <div class="registracija container col-sm-5 mt-4 mb-3 text-left">
+            <h5>Registracija</h5>
+            <form name="registracija" action="" method="">
+    
+                <div class="form-group">
+                    <label class="mt-3" for="ime">Ime:</label>
+                    <input class="form-control" type="text" name="ime" id="ime" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="prezime">Prezime:</label>
+                    <input class="form-control" type="text" name="prezime" id="prezime" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="username">Korisničko ime:</label>
+                    <input class="form-control" type="text" name="username" id="username" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="password">Lozinka:</label>
+                    <input class="form-control" type="password" name="password" id="password" required></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <label for="repassword">Ponovite lozinku:</label>
+                    <input class="form-control" type="password" name="repassword" id="repassword" required></textarea>
+                </div>
+    
+                <input type="submit" class="btn btn-outline-info mb-2" style="width:120px" value="Registruj me" />
+    
+            </form>
+        </div>
+
     <!-- Footer -->
-    <div class="container-fluid col-sm- footer">
+    <div class="footer container-fluid col-sm-">
         <p>Dizajn: ProjectX company 2019.</p>
     </div>
     <!--END of Footer-->
